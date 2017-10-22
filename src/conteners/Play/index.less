@@ -1,0 +1,367 @@
+.play{
+  width: 100%;
+  background: url("http://gacha.52toys.com/image/gacha-bg.jpg") no-repeat;
+  padding-top: 110px;
+  background-size: 414px 100%;
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  .eggOpen{
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #694c38;
+    z-index: 999;
+    i.egg-open-bg{
+      background: url("http://gacha.52toys.com/image/gacha-result-bg.png") center/contain no-repeat;
+      display: inline-block;
+      width: 80vh;
+      height: 80vh;
+      position: absolute;
+      top: 10%;
+      left: -10vh;
+      -webkit-animation: gacha-bg-rotate 50s linear infinite;
+      animation: gacha-bg-rotate 50s linear infinite;
+      z-index: -1;
+    }
+    .goodLuck{
+      background: url("http://gacha.52toys.com/image/gacha-luckly-title.png")no-repeat;
+      background-size: contain;
+      width: 184px;
+      height: 49.88px;
+      margin: 36px auto;
+    }
+    .eggInfo{
+      width: 230px;
+      margin: 0 auto;
+      background: linear-gradient(to right,#351b00,#865A21,#351b00);
+      box-shadow: 0 0 10px rgba(0,0,0,.55);
+      img{
+        display: inline-block;
+        margin: 13px;
+        width: 205.38px;
+      }
+      .eggTitle{
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 10px;
+        padding-top: 0;
+      }
+    }
+    .eggShare{
+      width: 100%;
+      margin: 50px auto;
+      height: 34.5px;
+      text-align: center;
+      .egg-back-btn{
+        display: inline-block;
+        background: url("http://gacha.52toys.com/image/gacha-result-btn.png")no-repeat;
+        background-size: 150px;
+        background-position: 0px -41px;
+        width: 116px;
+        height: 37.5px;
+      }
+      .egg-share-btn{
+        display: inline-block;
+        background: url("http://gacha.52toys.com/image/gacha-result-share.png")no-repeat;
+        background-size: 120px;
+        background-position: 0 0;
+        width: 120px;
+        height: 37.5px;
+        margin-left: 50px;
+      }
+    }
+
+  }
+  .eggOpen.active{
+    display: block;
+  }
+  @keyframes gacha-bg-rotate {
+    0% {
+      -webkit-transform: scale(1.5) rotate(0deg) translate3d(0,0,0);
+      transform: scale(1.5) rotate(0deg) translate3d(0,0,0)
+    }
+
+    100% {
+      -webkit-transform: scale(1.5) rotate(360deg) translate3d(0,0,0);
+      transform: scale(1.5) rotate(360deg) translate3d(0,0,0)
+    }
+  }
+  footer{
+  width: 100%;
+  position: absolute;
+  bottom: 18px;
+  .repertory{
+    display: inline-block;
+    color:#fff;
+    font-weight: bold;
+    margin-right: 10px;
+    span:first-child{
+      margin: 10px;
+    }
+  }
+  .comment{
+    display: inline-block;
+    position: absolute;
+    right: 22px;
+    top: -14px;
+    i:first-child{
+      display: inline-block;
+      width: 39px;
+      height: 49px;
+      background: url("http://gacha.52toys.com/image/comment-switch-active.png") no-repeat;
+      background-size: 38px auto;
+      background-position: 0;
+    }
+    i:last-child{
+      display: inline-block;
+      width: 50px;
+      height: 48px;
+      background: url("http://gacha.52toys.com/image/gacha-btn.png") no-repeat;
+      background-size: 342px auto;
+      background-position: -243px;
+    }
+  }
+}
+  .cover{
+    position: absolute;
+    top: 254px;
+    left: 137px;
+    width: 150px;
+    img{
+      width: 100%;
+    }
+  }
+  .bg{
+    position: absolute;
+    top: 57.5%;
+    left: 38.3%;
+    width: 24%;
+    height: 17vw;
+    background: #694c38;
+    border-radius: 27px 27px 0 0;
+    overflow: hidden;
+    img.egg{
+      position: absolute;
+      top: -68px;
+      right: 23px;
+      width: 58px;
+    }
+    img.egg.active{
+      animation: aniStuff 0.7s ease-in 1.1s;
+      animation-fill-mode: forwards;
+      z-index: 3;
+    }
+  }
+
+  @keyframes aniStuff {
+    0% {
+      transform: rotate(0deg) scale(.8)
+    }
+
+    100% {
+      top: 30px;
+      transform: rotate(-720deg) scale(1)
+    }
+  }
+  .play-header{
+    color:#fff;
+    position: fixed;
+    top:0;
+    background: #be8e4e;
+    width: 100%;
+    height: 46px;
+    .play-header-bar{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 8px;
+      margin: 0 -1px;
+      background: url("http://gacha.52toys.com/image/repeat-header-bottom.png") left/contain;
+    }
+    .balance{
+      display: inline-block;
+      position: absolute;
+      right: 57px;
+      margin-top: 1.5%;
+      width: 100px;
+      border: 2px solid #351b00;
+      background: #ffeacb;
+      height: 25px;
+      color: #351b00;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 25px;
+
+      span:last-child{
+        margin-left: 26px;
+      }
+    }
+    .recharge{
+      background: url("http://gacha.52toys.com/image/icon-recharge.png")no-repeat;
+      display: inline-block;
+      width: 49.6px;
+      height: 25px;
+      background-size: contain;
+      position: absolute;
+      right: 10px;
+      margin-top: 1.5%;
+      border: 2px solid #351b00;
+
+    }
+    .goHome{
+      width: 26px;
+      height: 26.5px;
+      display: inline-block;
+      background: url("http://gacha.52toys.com/image/icon-go-index.png")no-repeat;
+      background-size: contain;
+      margin: 6px;
+    }
+    .back{
+      background: url("http://gacha.52toys.com/image/gacha-icon.png") no-repeat;
+      width: 21px;
+      height: 21px;
+      background-position: -119px -28px;
+      background-size: 146.5px auto;
+      display: inline-block;
+      margin: 7px;
+    }
+    div{
+      display: inline-block;
+
+    }
+  }
+  .toy-info{
+    color:#fff;
+    position: fixed;
+    top:60px;
+    width: 100%;
+    z-index: 100;
+    .toy-info-title{
+      .warning{
+        font-weight: bold;
+        color: red;
+        text-shadow:
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff,
+                0 0 1px #fff;
+      }
+
+    }
+    .small{
+      position: absolute;
+      right: 20px;
+      .collect{
+        display: inline-block;
+        width: 27.5px;
+        height: 43.5px;
+        background: url("http://gacha.52toys.com/image/gacha-icon.png") no-repeat;
+        background-size: 146.5px auto;
+        background-position: -58px -43px;
+      }
+      .share{
+        display: inline-block;
+        width: 27.5px;
+        height: 43.5px;
+        background: url("http://gacha.52toys.com/image/gacha-icon.png") no-repeat;
+        background-size: 146.5px auto;
+        background-position: -29px -45px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .cat{
+    background: url("http://gacha.52toys.com/image/gacha/v4-gacha-body.png?v=20170527141") no-repeat;
+    background-size: 370px;
+    margin: auto 5%;
+    height: 606px;
+    position: relative;
+    .light{
+      z-index: 99;
+      width: 370px;
+      .cat-ear{
+        position: relative;
+        top: -20px;
+        right: 12px;
+        img{
+          width: 106%;
+          animation: flash 4s ease-in-out infinite;
+
+        }
+      }
+      .cat-ear.active{
+        background: url("http://gacha.52toys.com/image/gacha/v4-ears-marquee.gif")no-repeat;
+        background-size: 392.149px;
+        img{
+          visibility: hidden;
+        }
+      }
+      .pedestal{
+        position: relative;
+        top: 280px;
+        right: 9px;
+        z-index: 99;
+        img{
+          width: 105%;
+          animation: flash 4s ease-in-out infinite;
+
+        }
+      }
+      .pedestal.active{
+        background: url("http://gacha.52toys.com/image/gacha/v4-gacha-marquee.gif")no-repeat;
+        background-size: 388.5px;
+        img{
+          visibility: hidden;
+        }
+      }
+
+    }
+    .buttons{
+      position: relative;
+      top: 66px;
+      z-index: 107;
+      div{
+        position: absolute;
+        border: 0;
+        background: space;
+        img{
+          width: 48%;
+        }
+
+      }
+      div.active{
+        transition: transform .45s;
+        transform: rotate(120deg);
+        transform-origin: 24% 45%;
+      }
+      .thrice{
+        left: 58px;
+      }
+      .once{
+        right: -10px;
+      }
+      .ten-times{
+        top: 58px;
+        left: 84px;
+      }
+      .try-out{
+        top: 58px;
+        right: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  height: 65px;
+  background: linear-gradient(to bottom,#704d30,#4e391c);
+  padding-top: 8px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 8px;
+    margin: 0 -1px;
+    background: url("http://gacha.52toys.com/image/repeat-header-bottom.png") left/contain;
+  }
+  a{
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    margin-top: -7px;
+    z-index: 11;
+    i{
+      display: inline-block;
+      width: 85px;
+      height: 70px;
+
+    }
+  }
+  .nav-home{
+    flex: 1;
+    i{
+      background: url("http://gacha.52toys.com/image/gacha-menu.png");
+      background-position: -86.5px -.5px;
+      background-size: 172px auto;
+    }
+  }
+  .nav-toys{
+    flex: 1;
+    i{
+      background: url("http://gacha.52toys.com/image/gacha-menu.png");
+      background-position: -86.5px -71.5px;
+      background-size: 172px auto;
+    }
+  }
+  .nav-toysBox{
+    flex: 1;
+    i{
+      background: url("http://gacha.52toys.com/image/gacha-menu.png");
+      background-position: -86.5px -142.5px;
+      background-size: 172px auto;
+    }
+  }
+  .nav-info{
+    flex: 1;
+    i{
+      background: url("http://gacha.52toys.com/image/gacha-menu.png");
+      background-position: -86.5px -213.5px;
+      background-size: 172px auto;
+    }
+  }
+  .nav-home.active{
+    animation: tapScaleOut 0.4s both;
+    i{
+      background-position: -.5px -.5px;
+    }
+  }
+  .nav-toys.active{
+    animation: tapScaleOut 0.4s both;
+    i{
+      background-position: -.5px -71.5px;
+    }
+  }
+  .nav-toysBox.active{
+    animation: tapScaleOut 0.4s both;
+    i{
+      background-position: -.5px -142.5px;
+    }
+  }
+  .nav-info.active{
+    animation: tapScaleOut 0.4s both;
+    i{
+      background-position: -.5px -213.5px;
+    }
+  }
+}
+@keyframes tapScaleOut {
+  0% {
+    transform: scale(.8)
+  }
+
+  66% {
+    transform: scale(1.2)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}

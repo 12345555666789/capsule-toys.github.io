@@ -1,0 +1,73 @@
+.search{
+  background: url("http://gacha.52toys.com/image/toys-bg.jpg");
+  width: 100%;
+  max-width: 414px;
+  z-index: 992;
+  position: absolute;
+  top:1000px;
+  transition: all 0.3s;
+  height: 0;
+  overflow: hidden;
+  header{
+    width: 100%;
+    background: #be8e4e;
+    position: relative;
+    .header-bar{
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      right: 0;
+      height: 8px;
+      margin: 0 -1px;
+      background: url("http://gacha.52toys.com/image/repeat-header-bottom.png") left/contain;
+    }
+    span.back{
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-image: url("http://gacha.52toys.com/image/gacha-icon.png");
+      background-size: 146.5px auto;
+      width: 21px;
+      height: 21px;
+      background-position: -119px -28px;
+      margin: 10px;
+    }
+    input{
+      ::placeholder{
+        color: #987145;
+      }
+      -webkit-appearance: none;
+      width: 75%;
+      border-radius: 0;
+      margin: 4px 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: 2px solid #351b00;
+      text-align: left;
+      height: 30px;
+      min-height: 30px;
+      line-height: 26px;
+      padding-left: 5px;
+      padding-right: 5px;
+      background: #fff6e8;
+      color: #987145;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .search-btn{
+      color: #111;
+      text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
+      font-size: 15px;
+      padding: 5px 0;
+      line-height: 26px;
+      font-weight: bold;
+    }
+  }
+}
+.search.block{
+  transition: all 0.3s;
+  top: 0;
+  height: 1000px;
+}
